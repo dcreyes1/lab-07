@@ -80,6 +80,13 @@ class FormulaZeroTest {
             .onNodeWithText("Lewis Leclerc")
             .assertExists()
 
+        composeTestRule
+            .onNodeWithTag("clearDriversButton")
+            .performClick()
+
+        composeTestRule
+            .onNodeWithText("Lewis Leclerc")
+            .assertDoesNotExist()
 
         composeTestRule
             .onNodeWithTag("backButton")

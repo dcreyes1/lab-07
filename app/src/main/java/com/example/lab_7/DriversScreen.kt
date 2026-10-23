@@ -46,7 +46,7 @@ fun DriversScreen(navController: NavController) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-        
+
         Text(
             text = "Formula Zero Drivers",
             fontSize = 30.sp
